@@ -1,0 +1,82 @@
+/* Aplica box-sizing globalmente para evitar problemas de largura/altura */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Estilo geral da página */
+  body {
+    background-color: #dbeafe;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Estilo do contêiner da calculadora */
+  .calculator {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 320px;
+    text-align: center;
+  }
+  
+  /* Título */
+  h1 {
+    margin-bottom: 20px;
+    color: #1e3a8a;
+  }
+  
+  /* Campos de entrada */
+  input[type="number"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 2px solid #93c5fd;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Área dos botões */
+  .grid-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Estilo dos botões */
+  button {
+    padding: 15px;
+    font-size: 15px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Área do resultado */
+  #resultado {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #e0f2fe;
+    border: 2px solid #0284c7;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #075985;
+    font-weight: bold;
+    min-height: 30px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding e border não ultrapassem a div */
+  }
+  
